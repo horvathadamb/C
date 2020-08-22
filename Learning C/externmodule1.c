@@ -12,7 +12,7 @@
 
 
 
-extern int sum(int, int);
+extern int sum(int, int);		  // defined in the module externmodule2
 int e;
 
 int main() {
