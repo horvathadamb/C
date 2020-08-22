@@ -118,7 +118,7 @@ void wronginputcontinuestring(void) {													// same as before but now we s
 	char str[160] = { 0 };
 	do {
 		printf("Write two numbers comma separated, then press ENTER!\n");
-		gets(str);																								// storing input
+		fgets(str, 160, stdin);													// storing input in str (max 160) from standardinput 
 		if (sscanf_s(str, "%d,%d", &a, &b) != 2) {																// scanning string data
 			printf("Incorrect input! Press SPACE to exit, or press any other button to continue!\n");
 			continue;																							// new iteratoin in do loop
@@ -133,7 +133,7 @@ void inputerrorcheck(void) {
 	char str[160] = { 0 };
 	do {
 		printf("Write two nubers comma separated, then press enter!\n");
-		gets(str);
+		fgets(str,160,stdin);
 		if (str[0] == 0) {																						//empty input check
 			printf("No input detected! Press Space to exit, or any other button to continue!\n");
 			continue;
@@ -176,7 +176,7 @@ void detailedinputcheck(void) {
 
 	do {
 		printf("Write two numbers comma separated, then press Enter!\n");
-		gets(str);
+		fgets(str, 160, stdin);
 		if (str[0] == 0) {
 			printf("No input! Press SPACE to exit, or any other button to continue!\n");		//checking for empty input
 			continue;
@@ -211,7 +211,7 @@ void inputcheckstrspn(void) {
 	char str[160] = { 0 };
 	do {
 		printf("Write two numbers comma separated, then press ENTER!\n");
-		gets(str);
+		fgets(str, 160, stdin);
 		if (str[0] == 0) {
 			printf("Empty input, press SPACE to exit, or any other button to Continue!\n");
 			continue;
