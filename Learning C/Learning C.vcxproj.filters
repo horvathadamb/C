@@ -15,7 +15,16 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="printf_scanf.c">
+    <ClCompile Include="externmodule1.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="externmodule2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="defineconst.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="printfscanf.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

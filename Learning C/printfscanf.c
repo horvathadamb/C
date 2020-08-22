@@ -1,10 +1,10 @@
 
 /*******************************************
-* C language tutorial printf,scanf
-* Author: Horvath Adam
-* Last modified: 2020-08-22
+* Title:
+* Author: Horvath Adam 
+* Last modified: 
+* Language: C18
 ********************************************/
-
 
 
 
@@ -136,7 +136,7 @@ void inputerrorcheck(void) {
 	char str[160] = { 0 };
 	do {
 		printf("Write two nubers comma separated, then press enter!\n");
-		fgets(str,160,stdin);
+		fgets(str, 160, stdin);
 		if (str[0] == 0) {																						//empty input check
 			printf("No input detected! Press Space to exit, or any other button to continue!\n");
 			continue;
