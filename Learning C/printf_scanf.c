@@ -34,7 +34,10 @@ int errorpos(char*);
 void inputcheckstrspn(void);
 
 
+
 int main(void) {
+
+	/*	DELETE the first "//" to test the function!								*/
 
 	//print();								// text output
 	//sum();								// output is the sum of a and b
