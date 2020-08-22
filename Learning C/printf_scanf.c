@@ -1,6 +1,6 @@
 
-/*															First part of C language tutorial											*/
-/*																	Scanf and printf													*/
+// C language tutorial
+// printf scanf
 // Author: Adam Horvath
 
 #include <stdio.h>		// printf scanf
