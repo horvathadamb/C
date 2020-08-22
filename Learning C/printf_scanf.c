@@ -1,12 +1,17 @@
 
-// C language tutorial
-// printf scanf
-// Author: Adam Horvath
+/*******************************************
+* C language tutorial printf,scanf
+* Author: Horvath Adam
+* Last modified: 2020-08-22
+********************************************/
+
+
+
 
 #include <stdio.h>		// printf scanf
 #include <stdlib.h>		// exit
 #include <conio.h>		// getch
-#include <string.h>		//strspn stringcompare function
+#include <string.h>		// strspn 
 
 
 
