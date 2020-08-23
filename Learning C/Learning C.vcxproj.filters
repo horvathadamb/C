@@ -27,5 +27,11 @@
     <ClCompile Include="printfscanf.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="typedef.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="enum.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

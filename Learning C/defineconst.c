@@ -10,6 +10,11 @@
 #define ONE 1												// telling the preprocessor that ONE means 1 and TWO means 2
 #define TWO 2												
 
+
+const int w = 66;					// the program can not change the value of w
+
+//w = 11;				// this will result in an erro because w is a constant and can not be changed!
+
 int sum(int, int);
 int e;
 
