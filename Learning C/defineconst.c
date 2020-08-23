@@ -14,7 +14,7 @@
 
 const int w = 66;					// the program can not change the value of w
 
-//w = 11;				// this will result in an erro because w is a constant and can not be changed!
+//w = 11;				// this will result in an error because w is a constant and can not be changed!
 
 int sum(int, int);
 int e;
