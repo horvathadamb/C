@@ -7,9 +7,10 @@
 ********************************************/
 
 #include <stdio.h>
-#define ONE 1												// telling the preprocessor that ONE means 1 and TWO means 2
-#define TWO 2												
+#define ONE 1												// defining constant value
+#define TWO 2												// telling the preprocessor that ONE means 1 and TWO means 2
 
+//ONE = 3;				// this will make an error, changing constants is not allowed
 
 const int w = 66;					// the program can not change the value of w
 
