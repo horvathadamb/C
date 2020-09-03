@@ -33,5 +33,14 @@
     <ClCompile Include="enum.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="pointer.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dynamicmemoryallocation.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="voidpointercasting.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
