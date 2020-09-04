@@ -39,8 +39,5 @@
     <ClCompile Include="dynamicmemoryallocation.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="pointer2.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
   </ItemGroup>
 </Project>
