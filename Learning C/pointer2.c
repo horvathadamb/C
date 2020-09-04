@@ -30,5 +30,6 @@ int main(void) {
 
 	y = y + *p + **q;         // y = 7 + 7 + 7=21
 
-	printf("y=%d\n", y);
+	printf("y=%d\n", y); // printing
+
 }
