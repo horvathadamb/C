@@ -167,7 +167,7 @@
     <ClCompile Include="pointer.c">
       <SubType>
       </SubType>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="typedef.c">
       <SubType>

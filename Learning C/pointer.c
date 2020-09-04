@@ -44,8 +44,24 @@ int main() {
 	q = &z;					// q is going to point to the adress of z
 	r = &q;					// r is going to point to the adress of q
 							// meaning r poins to q and q points to z, so r basically r points to z
-
 	z = z + *q + **r;         // z = 7 + 7 + 7=21
-
 	printf("z=%d\n", z); // printing
+
+
+
+	typedef int* iptr;			// new type name for int*. Now iptr means int* in declaration
+	typedef iptr* ipptr;		// new type name for iptr*. Now ipptr means iptr* or int**
+	
+	int m = 12;
+	iptr n;
+	ipptr o;
+	
+	n = &m;
+	o = &n;
+
+	m = m + *n + **o;
+	printf("m=%d\n", m);
+
+
+
 }
