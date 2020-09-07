@@ -12,6 +12,7 @@
 int bitset(int,int);
 int bitreset(int, int);
 int bitxor(int, int);
+int bitswitch(int, int);
 
 int main() {
 		
@@ -27,9 +28,15 @@ int main() {
 												//  & 1111 1011 1111 0111 = 0xFBF7 mask with number "0" in 10. and 3. bit
 												//    0000 0011 1100 0010 = 0x03C2
 
-	bitxor(1994, 0x8421);						// 
-}
+	bitxor(1994, 0x8421);						//  Xor output is only 1 if only one number is 1
+												//  writing number 1 in mask will invert the corresponging bit value.
+												//  Lets invert bit 0,5,10,14. To do that write number 1 in mask bit 0,5,10,14
+												//  0000 0111 1100 1010 = 0x07CA
+												// ^1000 0100 0010 0001 = 0x0842 mask
+												// =1000 0011 1110 1011 = 0x83EB
 
+	bitswitch(25000, 20000);
+}	
 
 int bitset(int inputnumber, int mask) {
 	int bitsetoutput;
@@ -50,5 +57,16 @@ int bitxor(int inputnumber, int mask) {
 	bitxoroutput = inputnumber ^ mask;
 	bitxoragain = bitxoroutput ^ mask;
 
-	printf("Bitwise XOR operation output:\ninput value=%X or %d\nmask value=%X or %d\noutput value=%X\ or %d\nXor again with mask gets you the original value= %X or %d\n\n", inputnumber, inputnumber, mask, mask, bitxoroutput, bitxoroutput,bitxoragain,bitxoragain);
+	printf("Bitwise XOR operation output:\ninput value=%X or %d\nmask value=%X or %d\noutput value=%X\ or %d\nXor again gives back the original value=%X or %d\n\n", inputnumber, inputnumber, mask, mask, bitxoroutput, bitxoroutput,bitxoragain,bitxoragain);
 }
+
+int bitswitch(int firstinput, int secondinput) {
+	printf("Switching operation: \nBefore switch first value=%d, second value=%d\n",firstinput,secondinput);
+	firstinput = firstinput ^ secondinput;
+	secondinput = secondinput ^ firstinput;
+	firstinput = firstinput ^ secondinput;
+
+	printf("After switch first value=%d, second value=%d\n\n", firstinput, secondinput);
+	
+}
+
