@@ -35,7 +35,7 @@ int main() {
 												// ^1000 0100 0010 0001 = 0x0842 mask
 												// =1000 0011 1110 1011 = 0x83EB
 
-	bitswitch(25000, 20000);
+	bitswitch(25000, 20000);					// switching 2 register bit values without 3. container
 }	
 
 int bitset(int inputnumber, int mask) {
