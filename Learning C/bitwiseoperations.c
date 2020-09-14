@@ -13,6 +13,9 @@ int bitset(int,int);
 int bitreset(int, int);
 int bitxor(int, int);
 int bitswitch(int, int);
+int bitshift(int, int,int);
+
+
 
 int main() {
 		
@@ -36,7 +39,21 @@ int main() {
 												// =1000 0011 1110 1011 = 0x83EB
 
 	bitswitch(25000, 20000);					// switching 2 register bit values without 3. container
-}	
+
+	bitshift(1994, 1,2);						// Bitshift left operation equals to multiplying by 2^n, right is dividing by 2^n.
+												//shifting number 1994 or 0x07CA left 1 times:
+												// 0000 0111 1100 1010  =0x07CA or 1994
+												// 0000 1111 1001 0100  = 0x07CA<< 1 =3988 (1994*2)
+												// Bitshift right number 1994 right 2 times:
+												// 0000 0111 1100 1010 = 0x07CA or 1994 
+												// 0000 0001 1111 0010 = 0x07CA >> 2 = 498 (1994/ 2^2)
+
+
+
+
+}
+
+
 
 int bitset(int inputnumber, int mask) {
 	int bitsetoutput;
@@ -68,5 +85,14 @@ int bitswitch(int firstinput, int secondinput) {
 
 	printf("After switch first value=%d, second value=%d\n\n", firstinput, secondinput);
 	
+}
+
+int bitshift(int inputnumber, int shiftnumber1,int shiftnumber2) {
+	int output;
+	printf("Bitshift operation: \ninputnumber=%d or %X, shiftnumber1=%d shiftnumber2=%d\n", inputnumber,inputnumber, shiftnumber1,shiftnumber2);
+	output = inputnumber << shiftnumber1;
+	printf("Shifting number %X left %d times: %X<<%d=%X or %d\n", inputnumber, shiftnumber1, inputnumber,shiftnumber1, output,output);
+	output = inputnumber >> shiftnumber2;
+	printf("Shifting number %X right %d times: %X<<%d=%X or %d\n\n", inputnumber, shiftnumber2, inputnumber, shiftnumber2, output, output);
 }
 
