@@ -74,7 +74,7 @@ int bitxor(int inputnumber, int mask) {
 	bitxoroutput = inputnumber ^ mask;
 	bitxoragain = bitxoroutput ^ mask;
 
-	printf("Bitwise XOR operation output:\ninput value=%X or %d\nmask value=%X or %d\noutput value=%X\ or %d\nXor again gives back the original value=%X or %d\n\n", inputnumber, inputnumber, mask, mask, bitxoroutput, bitxoroutput,bitxoragain,bitxoragain);
+	printf("Bitwise XOR operation output:\ninput value=%X or %d\nmask value=%X or %d\noutput value=%X or %d\nXor again gives back the original value=%X or %d\n\n", inputnumber, inputnumber, mask, mask, bitxoroutput, bitxoroutput,bitxoragain,bitxoragain);
 }
 
 int bitswitch(int firstinput, int secondinput) {
