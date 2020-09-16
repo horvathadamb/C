@@ -52,7 +52,7 @@ int main() {
 
 	showbyte();									// show the upper and lower byte of the input number
 
-
+	
 }
 
 
@@ -89,13 +89,13 @@ int bitswitch(int firstinput, int secondinput) {
 	
 }
 
-int bitshift(int inputnumber, int shiftnumber1,int shiftnumber2) {
+int bitshift(int inputnumber, int leftshitftvalue,int rightshiftvalue) {
 	int output;
-	printf("Bitshift operation: \ninputnumber=%d or %X, shiftnumber1=%d shiftnumber2=%d\n", inputnumber,inputnumber, shiftnumber1,shiftnumber2);
-	output = inputnumber << shiftnumber1;
-	printf("Shifting number %X left %d times: %X<<%d=%X or %d\n", inputnumber, shiftnumber1, inputnumber,shiftnumber1, output,output);
-	output = inputnumber >> shiftnumber2;
-	printf("Shifting number %X right %d times: %X<<%d=%X or %d\n\n", inputnumber, shiftnumber2, inputnumber, shiftnumber2, output, output);
+	printf("Bitshift operation: \ninputnumber=%d or %X, leftshfitvalue=%d rightshiftvalue=%d\n", inputnumber,inputnumber, leftshitftvalue,rightshiftvalue);
+	output = inputnumber << leftshitftvalue;
+	printf("Shifting number %X left %d times: %X<<%d=%X or %d\n", inputnumber, leftshitftvalue, inputnumber,leftshitftvalue, output,output);
+	output = inputnumber >> rightshiftvalue;
+	printf("Shifting number %X right %d times: %X<<%d=%X or %d\n\n", inputnumber, rightshiftvalue, inputnumber, rightshiftvalue, output, output);
 }
 
 int showbyte(void) {
