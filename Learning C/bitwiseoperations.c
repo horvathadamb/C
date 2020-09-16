@@ -8,12 +8,14 @@
 
 
 #include<stdio.h>
+#include<math.h>
 
 int bitset(int,int);
 int bitreset(int, int);
 int bitxor(int, int);
 int bitswitch(int, int);
 int bitshift(int, int,int);
+int showbyte(void);
 
 
 
@@ -41,14 +43,14 @@ int main() {
 	bitswitch(25000, 20000);					// switching 2 register bit values without 3. container
 
 	bitshift(1994, 1,2);						// Bitshift left operation equals to multiplying by 2^n, right is dividing by 2^n.
-												//shifting number 1994 or 0x07CA left 1 times:
+												// shifting number 1994 or 0x07CA left 1 times:
 												// 0000 0111 1100 1010  =0x07CA or 1994
 												// 0000 1111 1001 0100  = 0x07CA<< 1 =3988 (1994*2)
 												// Bitshift right number 1994 right 2 times:
 												// 0000 0111 1100 1010 = 0x07CA or 1994 
 												// 0000 0001 1111 0010 = 0x07CA >> 2 = 498 (1994/ 2^2)
 
-
+	showbyte();
 
 
 }
@@ -96,3 +98,26 @@ int bitshift(int inputnumber, int shiftnumber1,int shiftnumber2) {
 	printf("Shifting number %X right %d times: %X<<%d=%X or %d\n\n", inputnumber, shiftnumber2, inputnumber, shiftnumber2, output, output);
 }
 
+int showbyte(void) {
+	int input;
+	int lowerbyte,upperbyte;
+	
+	
+	
+	printf("Write an integer: \n");
+	scanf_s("%d", &input);
+	printf("Your number in hexadecimal form: %X \n", input);
+
+	if (input > pow(2,16) ){
+		printf("Too big number, please use a 16bit number!\n");
+		return 0;
+	}
+
+	lowerbyte = input & 0x00FF;
+	printf("The lower byte of your number is: %X \n", lowerbyte);
+	
+	upperbyte= input >> 8;
+	printf("The upperbyte of your number is: %X \n", upperbyte);
+
+
+}
