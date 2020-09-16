@@ -50,7 +50,7 @@ int main() {
 												// 0000 0111 1100 1010 = 0x07CA or 1994 
 												// 0000 0001 1111 0010 = 0x07CA >> 2 = 498 (1994/ 2^2)
 
-	showbyte();
+	showbyte();									// show the upper and lower byte of the input number
 
 
 }
