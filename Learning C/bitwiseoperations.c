@@ -60,7 +60,7 @@ int main() {
 int bitset(int inputnumber, int mask) {
 	int bitsetoutput;
 	bitsetoutput = inputnumber | mask;
-	printf("Bitset operation output:\ninput value=%X or %d\nmask value=%X or %d\noutput value=%X\ or %d\n\n",inputnumber,inputnumber,mask,mask,bitsetoutput,bitsetoutput);
+	printf("Bitset operation output:\ninput value=%X or %d\nmask value=%X or %d\noutput value=%X or %d\n\n",inputnumber,inputnumber,mask,mask,bitsetoutput,bitsetoutput);
 
 	return bitsetoutput;
 }
@@ -68,7 +68,7 @@ int bitset(int inputnumber, int mask) {
 int bitreset(int inputnumber, int mask) {
 	int bitresetoutput;
 	bitresetoutput = inputnumber & mask;
-	printf("Bitreset operation output:\ninput value=%X or %d\nmask value=%X or %d\noutput value=%X\ or %d\n\n", inputnumber, inputnumber, mask, mask, bitresetoutput, bitresetoutput);
+	printf("Bitreset operation output:\ninput value=%X or %d\nmask value=%X or %d\noutput value=%X or %d\n\n", inputnumber, inputnumber, mask, mask, bitresetoutput, bitresetoutput);
 }
 
 int bitxor(int inputnumber, int mask) {
