@@ -25,9 +25,9 @@ unsigned long char_to_bin10(char ch) {
 
 
 int main(void) {
-    int mask = 0x00;
+    
    
-    printf("%08lu\n", (char_to_bin10(145) | mask));
+    printf("%08lu\n", char_to_bin10(0x1));
 
 
 
