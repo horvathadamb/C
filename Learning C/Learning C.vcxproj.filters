@@ -45,7 +45,7 @@
     <ClCompile Include="unix.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="hextobin.c">
+    <ClCompile Include="binaryconvert.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
