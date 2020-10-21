@@ -42,5 +42,11 @@
     <ClCompile Include="bitwiseoperations.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="unix.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hextobin.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

@@ -167,6 +167,16 @@
     <ClCompile Include="bitwiseoperations.c">
       <SubType>
       </SubType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="hextobin.c">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="unix.c">
+      <SubType>
+      </SubType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="pointer.c">
       <SubType>
